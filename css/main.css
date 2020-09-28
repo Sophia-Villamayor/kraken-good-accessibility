@@ -18,12 +18,16 @@ body {
   max-width: 48em;
 }
 
+.bg-colour {
+  background-color: #259f95;
+}
+
 img {
   display: block;
   width: 100%;
 }
 
-header {
+.anchor {
   background-image: url("../images/anchors.svg");
   color: #fff;
   font-size: 1.125rem;
@@ -40,10 +44,6 @@ header p {
 
 .by {
   font-style: italic;
-}
-
-article div {
-  padding: 1rem;
 }
 
 article header {
@@ -91,6 +91,12 @@ nav a {
   height: 2.5rem;
 }
 
+.current,
+nav a:hover,
+nav a:focus {
+  background-color: #1e7c74;
+}
+
 nav a:hover,
 nav a:focus {
   background-color: #1e7c74;
@@ -117,14 +123,19 @@ nav i {
 article p {
   margin: 0;
   text-indent: 1.3em;
+  color: #fff;
+}
+
+.italic {
+  color: #1e7c74;
 }
 
 article div :first-child {
   text-indent: 0;
+  color: #fff;
 }
 
 article div :first-child::first-line {
-  color: #1e7c74;
   font-style: italic;
 }
 
